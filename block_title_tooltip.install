@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Installation file for block_title_tooltip module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function block_title_tooltip_uninstall() {
+  db_query("DELETE FROM {variable} WHERE name LIKE 'block_title_tooltip_%'");
+  cache_clear_all('variables', 'cache');
+}

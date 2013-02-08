@@ -1,0 +1,7 @@
+name = Block Title Tooltip
+description = Allows to add Tooltip to Block Titles
+core = 7.x
+files[] = block_title_tooltip.info
+files[] = block_title_tooltip.install
+files[] = block_title_tooltip.module
+files[] = README.txt
